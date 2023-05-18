@@ -1,0 +1,35 @@
+.hero {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroEyebrow {
+  font-family: "Survivants";
+  font-size: 1vw;
+  font-style: italic;
+  color: #cfcfce;
+  text-shadow: #000 0px 0px 20px;
+  padding-bottom: 1vw;
+}
+
+.heroButton {
+  background: orange;
+  border-radius: 50%;
+  font-size: 3vmin;
+  cursor: pointer;
+}
+
+@keyframes buttonIconMove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
