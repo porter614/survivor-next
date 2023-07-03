@@ -8,7 +8,7 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   return (
-    <div className="h-screen">
+    <div className="h-screen flex flex-col">
       <Image
         src={bgPic}
         alt="Picture of a Fijian Island"
@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
         className="-z-10"
       />
       <Navbar />
-      <main className="mx-16">{children}</main>
+      <main className="mx-16 grow">{children}</main>
     </div>
   );
 }
