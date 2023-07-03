@@ -5,7 +5,24 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        pulse: {
+          "0%": {
+            opacity: 1,
+          },
+          "50%": {
+            opacity: 0.85,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+      },
+      animation: {
+        "animate-pulse": "pulse 2s linear infinite",
+      },
+    },
   },
   plugins: [],
 };

@@ -109,3 +109,9 @@ a {
     color-scheme: dark;
   }
 }
+
+@layer components {
+  .shadow-text {
+    text-shadow: #000 0px 0px 20px;
+  }
+}

@@ -18,7 +18,7 @@ const Item = ({ to, label, icon }: ItemProps) => {
     <li key={label}>
       <Link href={to}>
         <div className={styles.item}>
-          {icon} {label}
+          {icon} <span className="md:max-xl:block hidden">{label}</span>
         </div>
       </Link>
     </li>
@@ -35,7 +35,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav>
+    <nav className="bg-black absolute bottom-0 w-full md:max-xl:static">
       <ul className={styles.itemList}>
         {links.map((link) => (
           <Item {...link} />
