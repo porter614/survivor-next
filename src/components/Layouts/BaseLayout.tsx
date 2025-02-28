@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
         className="-z-10"
       />
       <Navbar />
-      <main className="mx-16 grow">{children}</main>
+      <main className="grow">{children}</main>
     </div>
   );
 }

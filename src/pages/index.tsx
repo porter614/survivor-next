@@ -5,9 +5,11 @@ import { FeatureTiles } from "@components/FeatureTiles";
 
 export default function Home() {
   return (
-    <>
+    <main className="min-h-screen overflow-x-hidden m-0 p-0">
       <Hero />
-      <FeatureTiles />
-    </>
+      <div id="featureTiles" className="w-screen max-w-none">
+        <FeatureTiles />
+      </div>
+    </main>
   );
 }
