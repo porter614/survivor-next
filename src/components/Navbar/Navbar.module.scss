@@ -18,61 +18,20 @@
   justify-content: space-around;
   list-style: none;
   margin: 0;
-  padding: 0; /* 0 ${theme.space.s}; */
+  padding: 0;
   position: relative;
   width: 100%;
 }
 
-.menu {
-  border-top: none;
-  background: transparent;
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-  padding-left: 50px;
-  transition: none;
-}
-
-.hiddenItemList {
-  list-style: none;
-  margin: 0;
-  position: absolute;
-  background: #709425;
-  border: 1px solid #ecebea;
-  top: 48px;
-  right: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
-  border-radius: 5px;
-  border-top-right-radius: 0;
-
-  &:after {
-    content: "";
-    background: #709425;
-    z-index: 10;
-    top: -10px;
-    right: -1px;
-    width: 44px;
-    height: 10px;
-    position: absolute;
-    border-left: 1px solid #ecebea;
-    border-right: 1px solid #ecebea;
-  }
-}
-
-.item,
-.showItem {
+.item {
   background: transparent;
   transition: all 0.5s;
   display: flex;
   align-items: center;
   padding: 1rem;
-  gap: 0.25rem;
-}
+  gap: 0.75rem;
 
-.hiddenItem {
-  text-align: left;
-  padding: 5px;
+  &:hover {
+    color: #f97316; // text-orange-400 equivalent
+  }
 }

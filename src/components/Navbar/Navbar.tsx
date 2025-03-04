@@ -15,10 +15,11 @@ interface ItemProps {
 
 const Item = ({ to, label, icon }: ItemProps) => {
   return (
-    <li key={label}>
+    <li>
       <Link href={to}>
-        <div className={styles.item}>
-          {icon} <span className="md:max-xl:block hidden">{label}</span>
+        <div className={`${styles.item} xl:py-4`}>
+          {icon}
+          <span className="hidden xl:block">{label}</span>
         </div>
       </Link>
     </li>
@@ -35,10 +36,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-black absolute bottom-0 w-full md:max-xl:static">
-      <ul className={styles.itemList}>
+    <nav className="bg-gray-800 fixed bottom-0 w-full xl:fixed xl:top-0 z-50 xl:h-14">
+      <ul className={`${styles.itemList} xl:justify-start xl:px-4`}>
         {links.map((link) => (
-          <Item {...link} />
+          <Item {...link} key={link.label} />
         ))}
       </ul>
     </nav>
